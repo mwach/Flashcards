@@ -1,0 +1,16 @@
+<div class="form-group col-md-4">
+    <!-- Date input -->
+    <label class="control-label" for="startDate">Początek okresu</label> 
+    <input #startDate class="form-control" id="startDate" name="startDate"
+        type="text" />
+</div>
+<div class="form-group col-md-4">
+    <!-- Date input -->
+    <label class="control-label" for="endDate">Koniec okresu</label> 
+    <input #endDate class="form-control" id="endDate" name="endDate"
+        type="text" />
+</div>
+<div class="form-group col-md-12">
+    <!-- Submit button -->
+    <button class="btn btn-primary " (click)="send(startDate.value, endDate.value)">Wyślij</button>
+</div>

@@ -1,0 +1,9 @@
+<form action="#" class="pull-right">
+    <div class="form-group form-inline">
+        <label class="control-label" for="userName">Name:</label>
+        <input class="form-control" #userName name="userName"/>
+        <label class="control-label" for="password" >Password:</label>
+        <input class="form-control" #password type="password" name="password"/>
+        <button (click)="login(userName.value, password.value); false;" class="btn btn-default">Submit</button>
+    </div>
+</form>
