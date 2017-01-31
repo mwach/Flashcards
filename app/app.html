@@ -1,5 +1,6 @@
 <div class="container">
 
+<simple-notifications [options]="options"></simple-notifications>
 <login-panel [user]="user" *ngIf="!user.logged"></login-panel>
 <user-panel [user]="user" *ngIf="user.logged"></user-panel>
 

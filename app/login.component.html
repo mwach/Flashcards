@@ -1,9 +1,9 @@
 <form action="#" class="pull-right">
     <div class="form-group form-inline">
         <label class="control-label" for="userName">Name:</label>
-        <input class="form-control" #userName name="userName"/>
+        <input [(ngModel)]="username" class="form-control" name="userName"/>
         <label class="control-label" for="password" >Password:</label>
-        <input class="form-control" #password type="password" name="password"/>
-        <button (click)="login(userName.value, password.value); false;" class="btn btn-default">Submit</button>
+        <input [(ngModel)]="password" class="form-control" type="password" name="password"/>
+        <button (click)="login(); false;" class="btn btn-default">Submit</button>
     </div>
 </form>
