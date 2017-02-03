@@ -11,4 +11,10 @@ export class UserPanelComponent {
     @Input()
     private user: User;
 
+    public logout(): void{
+        this.user.logged = false;
+        this.user.email = null;
+        this.user.name = null;
+        this.user.surname = null;
+    }
 }

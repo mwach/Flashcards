@@ -1,9 +1,11 @@
-<form action="#" class="pull-right">
-    <div class="form-group form-inline">
-        <label class="control-label" for="userName">Name:</label>
-        <input [(ngModel)]="username" class="form-control" name="userName"/>
-        <label class="control-label" for="password" >Password:</label>
-        <input [(ngModel)]="password" class="form-control" type="password" name="password"/>
-        <button (click)="login(); false;" class="btn btn-default">Submit</button>
-    </div>
-</form>
+<div class="row">
+    <form action="#" class="pull-right form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="userName">Name:</label>
+            <input [(ngModel)]="username" class="form-control" name="userName" placeholder="Username"/>
+            <label class="sr-only" for="password">Password:</label>
+            <input [(ngModel)]="password" class="form-control" type="password" name="password" placeholder="Password"/>
+            <button (click)="login(); false;" class="btn btn-default">Log-in</button>
+        </div>
+    </form>
+</div>

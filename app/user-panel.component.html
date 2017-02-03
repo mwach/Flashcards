@@ -1,3 +1,8 @@
 <div class="row">
-    <h1 *ngIf="user"> hello {{user.name}}</h1>
+    <form action="#" class="pull-right">
+        <div class="form-group form-inline">
+            <label class="control-label" for="logout">Hello {{user.name}}</label>
+            <button id="logout" (click)="logout(); false;" class="btn btn-default">Log-out</button>
+        </div>
+    </form>
 </div>

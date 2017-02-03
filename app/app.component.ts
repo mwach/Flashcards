@@ -1,15 +1,17 @@
 import { Component } from '@angular/core'
 import { User } from './user';
+import { QuestionHub } from './QuestionHub';
 import { NotificationsService } from 'angular2-notifications';
 
 @Component({
     moduleId: module.id,
     selector: 'app',
-    templateUrl: 'app.html'
+    templateUrl: 'app.html',
 })
 export class AppComponent {
 
-    user = new User();
+    public user = new User();
+    public questionHub = new QuestionHub();
 
     options = {
         position: ["top", "left"],
